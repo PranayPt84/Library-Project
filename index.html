@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: black;
+            color: white;
+  
+}
+
+
+
+.headder{
+    height: 100vh;
+    width: 77vw;
+    position: absolute;
+   right: 0;
+    /* border: 2px solid blue; */
+ 
+     
+}
+.headder::before{
+    background-image: url("https://media.istockphoto.com/id/1404145225/photo/energy-crisis-hands-touch-light-bulb-with-energy-resources-icon-and-rising-graph-data-chart.webp?a=1&b=1&s=612x612&w=0&k=20&c=Snt0_BvE-NHiH1w8bHbZ4HjIYc8P3NHxEEEw_5I2Ei4=");
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+h3{
+    height: 23vh;
+    width: 42vw;
+    margin-top: 65px;
+    position: relative;
+    left: 115px;
+    /* border: 2px solid goldenrod; */
+    padding: 5px;
+    font-size: 8vh;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 4px 4px 4px #934a2d;
+}
+.headder h5{
+   
+    /* border: 2px solid black; */
+    position: relative;
+    top: 10vh;
+    /* height: 19px; */
+    font-size: 30px;
+    text-align: center;
+    padding: 4px;
+    text-shadow: 3px 2px 3px #4538c5;
+}
+/* .navbar ul{
+    border: 2px solid white;
+    margin:10px;
+    margin-top: 45px;
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 10px;
+    margin-left: 0px;
+   list-style: none;
+   margin: 10px 53px 16px 29px;
+
+   border-radius: 10px;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 6px 52px;
+    margin: 5px;
+    color: rgb(57, 140, 191);
+    background-color: beige;
+    font-size: 21px;
+    margin: 13px 0px 5px 3px;
+    border-radius: 13px;
+
+} */
+.logo{
+    /* border: 2px solid white; */
+    position: absolute;
+    height: 24vh;
+    width: 12vw;
+    right: 15vw;
+    top: 7vh;
+    background-image: url(https://graphicsprings.com/wp-content/uploads/2024/09/library-logo-design-featuring-a-sunburst-behind-an-open-book.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 4px 10px 5px #3b3333;
+    border-radius: 298px;
+}
+.box2{
+    /* border: 2px solid white; */
+    position: absolute;
+    width: 353px;
+    height: 100vh;
+    background-color: #1587d3;
+}
+.innerbox{
+   
+    position: relative;
+    /* border: 2px solid coral; */
+    height: 30vh;
+    /* background-color: #136aa5; */
+    background-image: url("https://media.istockphoto.com/id/1899350296/photo/lots-of-books.jpg?s=612x612&w=0&k=20&c=cICqIcDptM4o7zioMJgftlkCnWSXGOQqcTA82HANL6E=");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    /* border: 2px solid rgb(63, 47, 47); */
+    background-color: #1587d3;
+    display: block;
+    margin: 1px;
+    padding: 5px;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px black;
+}
+.nav ul li :hover,.nav ul li a.active{
+    color: rgb(124, 120, 120);
+    text-decoration: underline;
+    background-color: #0a5181;
+}
+.innerbox2{
+    position: relative;
+    /* border: 2px solid red; */
+    height: 43vh;
+    background-color: #136aa5;
+}
+.container{
+    /* border: 2px solid rgb(235, 9, 205); */
+    position: relative;
+    top: 10vh;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+   
+    
+}
+.card{
+   
+    /* border: 2px solid blue; */
+    height: 29vh;
+    width: 18vw;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    background-color:#136aa5;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+    box-shadow: 7px 5px 5px #0f5381
+}
+.purchase{
+    position: absolute;
+    top: 23vh;
+    height: 36px;
+    width: 18vw;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 3px;
+    background-color: #1587d3;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border:0;
+    
+}
+.purchase:hover{
+    color: rgb(124, 120, 120);
+    text-decoration: underline;
+    background-color: #0a5181;
+}
+
+
+    </style>
+</head>
+<body>
+   <div class="headder">
+    
+    <h3>WelCome to Our's  &nbsp;&nbsp; &nbsp;&nbsp;Library</h3>
+    <h5> Membership for Cources </h5>
+    <div class="container">
+        <div class="card" id="card1">60rs Per Day <button class="purchase" onclick="purchase1()" name="daypurchase">Purchase</button></div>
+        <div class="card" id="card2">400rs Per Week<button class="purchase" onclick="purchase2()" name="daypurchase">Purchase</button></div>
+        <div class="card" id="card3">1400rs Per Month<button class="purchase" onclick="purchase3()" name="daypurchase">Purchase</button></div>
+        <div class="card" id="card4">14,400rs Per Year<button class="purchase" onclick="purchase4()" name="daypurchase">Purchase</button></div>
+    </div>
+    <!-- <nav class="navbar">
+        <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Menu</a></li>
+        <li><a href="">About_Us</a></li>
+        <li><a href="">Help</a></li></ul>
+    </nav> -->
+    
+    <div class="logo"></div>
+   </div>
+   <div class="box2">
+    
+    <div class="innerbox"></div>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="SeatOccupency.jsp">Seat Dashboard</a></li>
+            <li><a href="">About_Us</a></li>
+            <li><a href="LibraryRegistration.html">Registration</a></li>
+            <li><a href="Login.html">Log-in</a></li>
+        </ul>
+    </nav>
+    <div class="innerbox2">coming soon</div>
+   </div>
+   <script>
+    function purchase1(){
+        let card1=document.getElementById("card1");
+          let card1purchase= confirm(" Click 'ok' to Confirm Your Purchase .....!");
+          if (card1purchase) {
+            // console.log("Congratulation you successfully purchase 60rs per day package");
+            alert("Congratulation you successfully purchase 60rs per day package");
+          } else {
+           alert("Purchase Cancel")
+          }
+    }
+    function purchase2(){
+        document.getElementById("card2");
+        let card2purchase=confirm("Click 'ok' to Confirm Your Purchase .....!");
+        if(card2purchase){
+       alert("Congratulation you successfully purchase 400rs per week package")
+        }
+        else{
+            alert("Purchase Cancel")  
+        }
+    }
+    function purchase3(){
+        document.getElementById("card3");
+        let card3purchase=confirm("Click 'ok' to Confirm Your Purchase .....!");
+        if(card3purchase){
+       alert("Congratulation you successfully purchase 1400rs per month package")
+            
+        }
+        else{
+            alert("Purchse cancel");
+        }
+    }
+    function purchase4(){
+        document.getElementById("card4");
+        let card4purchase=confirm("Click 'ok' to Confirm Your Purchase .....!");
+        if(card4purchase){
+            alert("Congratulation you successfully purchase 14400rs per year package");
+        }
+        else{
+            alert("Purchase Cancel")
+        }
+    }
+   </script>
+</body>
+</html>

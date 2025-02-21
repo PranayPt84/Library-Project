@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-image: url("https://img.freepik.com/free-vector/gradient-blue-abstract-technology-background_23-2149213765.jpg?ga=GA1.2.1691869105.1723291109&semt=ais_hybrid");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        .navbar ul {
+            position: absolute;
+            top: 11vh;
+            left: 8vw;
+            width: 87vw;
+
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            margin: 10px;
+            margin-left: 0px;
+            list-style: none;
+            margin: 10px 53px 16px 29px;
+
+            border-radius: 10px;
+
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            padding: 6px 52px;
+            margin: 5px;
+            color: rgb(40 89 119);
+            font-weight: bold;
+            background-color: #e3e4ef;
+            font-size: 21px;
+            margin: 13px 0px 5px 3px;
+            border-radius: 13px;
+
+        }
+
+        .navbar ul li a:hover {
+            background-color: #393e7e;
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .innerbox {
+
+            height: 65vh;
+            width: 75vw;
+            background-image: url("https://img.freepik.com/free-vector/gradient-blue-background_23-2149331354.jpg?t=st=1738235606~exp=1738239206~hmac=cb86d28700de2e8a074b53a53adfe25b9423a9f897f4b44013b8b55338f7b5cd&w=996");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 21vh;
+            left: 13vw;
+            display: flex;
+            justify-content: space-evenly;
+            box-shadow: 5px 5px 3px #191614;
+        }
+
+        .box {
+            height: 34vh;
+            width: 17vw;
+            display: inline-block;
+            position: relative;
+
+            top: 12vh;
+            display: flex;
+            justify-content: center;
+            background-color: #b5c789;
+            box-shadow: 4px 3px 2px gray;
+
+
+        }
+
+        .head {
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            position: absolute;
+            text-shadow: 3px 1px 2px black;
+        }
+
+        .innerbox h3 {
+            /* background-color: aqua; */
+            color: #e0d2d2;
+            text-align: center;
+            width: 98%;
+            position: absolute;
+            padding: 10px;
+            font-size: 32px;
+        }
+
+        .btn {
+            position: absolute;
+            width: 95%;
+            text-align: center;
+            top: 22vh;
+            left: 0vw;
+            background-color: rgb(39, 49, 238);
+            text-decoration: none;
+            font-weight: bold;
+            color: #cfe0dd;
+            padding: 5px;
+            font-size: 20px;
+            border: 2px solid black;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(94, 94, 238);
+            color: rgb(58, 56, 56);
+            text-decoration: underline;
+            text-shadow: none;
+        }
+
+        .form {
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 5vh;
+            height: 18vh;
+            width: 14vw;
+        }
+
+        .input {
+            display: inline-block;
+            width: 13vw;
+            font-size: 16px;
+            padding: 3px;
+            text-align: center;
+
+        }
+
+        label {
+            display: block;
+            font-size: 17px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="Library.html">Home</a></li>
+                <li><a href="">Books</a></li>
+                <li><a href="">About_Us</a></li>
+                <li><a href="LibraryRegistrasion.html">Registration</a></li>
+                <li><a href="LibraryLogin.html">Log-in</a></li>
+            </ul>
+        </nav>
+        <div class="innerbox">
+            <h3>Admin's Work Place</h3>
+
+            <div class="box">
+                <div class="head">Provide Seat</div>
+                <div class="form">
+                    <form action="" method="get">
+                        <label for="libraryid">Library-id :-</label>
+                        <input type="number" name="libraryid" id="libraryid" placeholder="Enter Library_id"
+                            class="input">
+                        <label for="seatno">Seat-no :-</label>
+                        <input type="number" name="seatno" id="seatno" placeholder="seat no between 1 to 30"
+                            class="input">
+                        <input type="submit" value="Provide" class="btn">
+                    </form>
+                </div>
+            </div>
+            <div class="box">
+                <div class="head">Replace Seat</div>
+                <div class="form">
+                    <form action="" method="get">
+                        <label for="relpacelibid">Library-id :-</label>
+                        <input type="number" name="relpacelibid" id="relpacelibid" placeholder="Enter Library_id"
+                            class="input">
+                        <label for="previousseat">Previous seat :- </label>
+                        <input type="number" name="previousseat" id="previousseat" placeholder="Enter your previousseat"
+                            class="input">
+                        <label for="updateseat">Seat User Want :-</label>
+                        <input type="number" name="updateseat" id="updateseat" placeholder="Seat no between 1 to 30 "
+                            class="input">
+                        <input type="submit" value="Replace" class="btn">
+                    </form>
+                </div>
+            </div>
+            <div class="box">
+                <div class="head">Remove User</div>
+                <div class="form">
+                    <form action="" method="get">
+                        <label for="removelibid">Library-id :-</label>
+                        <input type="number" name="removelibid" id="removelibid" placeholder="Enter Library_id"
+                            class="input">
+                        <label for="name">Name :-</label>
+                        <input type="text" name="name" id="name" placeholder="Enter users Name" class="input">
+                        <label for="contactno"> Contact-no :-</label>
+                        <input type="number" name="contactno" id="contactno" placeholder="Enter your Contact_no"
+                            class="input">
+                        <input type="submit" value="Remove" class="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+
+    </script>
+</body>
+
+</html>

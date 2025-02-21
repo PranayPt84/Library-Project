@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-in Page</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            /* background-color: rgb(118, 118, 250); */
+            background-image: url("https://media.istockphoto.com/id/1404145225/photo/energy-crisis-hands-touch-light-bulb-with-energy-resources-icon-and-rising-graph-data-chart.webp?a=1&b=1&s=612x612&w=0&k=20&c=Snt0_BvE-NHiH1w8bHbZ4HjIYc8P3NHxEEEw_5I2Ei4=");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .innercontainer {
+            position: absolute;
+            /* border: 2px solid red; */
+            background-color: rgb(101 101 215);
+            left: 34vw;
+            top: 31vh;
+            height: 41vh;
+            width: 35vw;
+            box-shadow: 6px 6px 4px #3d3737;
+        }
+
+        .input {
+            display: block;
+            text-align: center;
+            margin: 13px 6px;
+            padding: 8px;
+            font-size: 17px;
+            width: 70%;
+            position: relative;
+            left: 4vw;
+            top: 2vh;
+            background-color: rgb(221, 197, 166);
+            border-radius: 7px;
+        }
+
+        h3 {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            padding: 11px;
+            background-color: black;
+            text-shadow: 3px 3px 4px #dfea78e6;
+
+        }
+
+
+        .btn {
+
+            background-color: rgb(58, 58, 117);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 6px;
+            margin: 4px 40px;
+            padding: 10px;
+            position: relative;
+            display: inline-block;
+            text-align: center;
+            width: 10vw;
+            top: 5vh;
+            left: 1vw;
+            border-color: buttonborder;
+            border-radius: 2px;
+            border-style: outset;
+        }
+
+
+        .btn:hover {
+            background-color: rgb(73, 73, 175);
+            color: rgb(68, 67, 67);
+            text-decoration: underline;
+        }
+             .navbar ul {
+            position: absolute;
+            top: 11vh;
+            left: 5vw;
+            width: 93vw;
+           
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            margin: 10px;
+            margin-left: 0px;
+            list-style: none;
+            margin: 10px 53px 16px 29px;
+
+            border-radius: 10px;
+
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            padding: 6px 52px;
+            margin: 5px;
+            color: rgb(40 89 119);
+            font-weight: bold;
+            background-color: #e3e4ef;
+            font-size: 21px;
+            margin: 13px 0px 5px 3px;
+            border-radius: 13px;
+
+        }
+
+        .navbar ul li a:hover,.navbar ul li a.active {
+            background-color: #393e7e;
+            color: grey;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+         <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="SeatOccupency.jsp">Seat Dashboard</a></li>
+                <li><a href="">About_Us</a></li>
+                <li><a href="LibraryRegistration.html">Registration</a></li>
+                <li><a href="Login.html" class="active">Log-in</a></li>
+            </ul>
+        </nav>
+        <div class="innercontainer">
+            <h3>Log-in Your Id and Password</h3>
+            <form action="LoginCheck" method="get">
+                <input type="text" name="logid" class="input" placeholder="Enter your Library Id" required>
+                <input type="password" name="logpassword" class="input" placeholder="Enter your Password" required>
+                <input type="submit" value="Log-in" class="btn" >
+                <a href="LibraryRegistration.html" class="btn">Registration</a>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
